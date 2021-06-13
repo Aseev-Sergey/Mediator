@@ -1,0 +1,15 @@
+@startuml
+
+package sample <<Folder>>{
+package colleague <<Folder>>{
+abstract class Colleague
+interface Mediator
+class Student extends Colleague
+class Teacher extends Colleague
+class Viewer extends Colleague
+}
+class Main extends javafx.application.Application
+class Controller implements javafx.fxml.Initializable, colleague.Mediator
+}
+
+@enduml
